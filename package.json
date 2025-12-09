@@ -1,19 +1,14 @@
 {
   "name": "geoservices",
-  "version": "2.0.1",
+  "version": "2.0.1-ra-fixes.1",
   "description": "Javascript Bindings for Geoservices",
   "main": "index.js",
-  "browser": {
-    "request": "xhr"
-  },
   "scripts": {
-    "lint": "grunt jshint",
-    "test": "npm run lint && vows --spec",
-    "prepublishOnly": "browserify index.js --standalone Geoservices | uglifyjs -cm > geoservices.min.js"
+    "test": "vows --spec"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Esri/Geoservices-js.git"
+    "url": "git://github.com/RideAmigosCorp/Geoservices-js.git"
   },
   "keywords": [
     "gis",
@@ -22,19 +17,9 @@
     "geoservices"
   ],
   "dependencies": {
-    "postman-request": "^2.88.1-postman.46",
-    "xhr": "^2.4.0"
+    "postman-request": "^2.88.1-postman.46"
   },
   "devDependencies": {
-    "browserify": "^14.4.0",
-    "gh-release": "^3.2.1",
-    "grunt": "^1.0.3",
-    "grunt-complexity": "~1.1.0",
-    "grunt-contrib-concat": "~1.0.1",
-    "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-jshint": "1.1.0",
-    "grunt-vows": "0.4.x",
-    "uglify-js": "^3.1.4",
     "vows": "^0.8.2"
   },
   "author": "",
